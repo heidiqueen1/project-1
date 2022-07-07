@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bg_animate {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #005c98, #5058da);
+  position: relative;
+  overflow: hidden;
+}
+
+.header_nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_nav .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px,0;
+}
+
+.header_nav h1 {
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header_nav nav a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.banner_contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.banner_tittle h2 {
+  color: aliceblue;
+  font-size: 60px;
+  font-weight: 800px;
+  margin-bottom: 20px;
+}
+
+.banner_tittle .contacto {
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  background: #1a2849;
+  padding: 20px;
+}
+
+.banner_img img {
+  height: 320px;
+  width: 290px;
+  display: block;
+  border-radius: 50%;
+  margin: 100px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #fff;
+ 
+}
+
+/* burbujas*/
+
+.burbuja{
+    
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: .150;
+    
+
+    animation: burbujas 3s linear infinite; 
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 4s;
+}
+
+.burbuja:nth-child(3){
+    width: 80px;
+    height: 80px;
+    left: 45%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(4){
+    width: 100px;
+    height: 100px;
+    left: 55%;
+    animation-duration: 4s;
+}
+.burbuja:nth-child(5){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(6){
+    width: 100px;
+    height: 100px;
+    left: 15%;
+    animation-duration: 3s;
+}
+
+.burbuja:nth-child(7){
+    width: 80px;
+    height: 80px;
+    left: 95%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 90%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.burbuja:nth-child(9){
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(10){
+    width: 100px;
+    height: 100px;
+    left: 18%;
+    animation-duration: 1s;
+}
+
+.burbuja:nth-child(11){
+    width: 80px;
+    height: 80px;
+    left: 40%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(12){
+    width: 100px;
+    height: 100px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+    
+}
